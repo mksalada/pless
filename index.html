@@ -8,8 +8,9 @@
   <meta name="author" content="MK Salada">
   <meta name="description" content="Pless Website">
   <link rel="shortcut icon" href="" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="fontawesome/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
   <div class="container">
@@ -17,84 +18,179 @@
       <div class="logo">pless</div>
 
       <nav>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Merchants</a></li>
-          <li><a href="#"">Developer</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="nav-links list-style-none">
+          <li class="d-inline-block">
+            <a href="#" class="transition">Home</a>
+          </li>
+          <li class="d-inline-block">
+            <a href="#" class="transition">Products</a>
+          </li>
+          <li class="d-inline-block">
+            <a href="#" class="transition">Merchants</a>
+          </li>
+          <li class="d-inline-block">
+            <a href="#" class="transition">Developer</a>
+          </li>
+          <li class="d-inline-block">
+            <a href="#" class="transition">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="top">
+      <section class="top text-center">
         <div>
-          <h1>Global merchant network for <br> real time settlements</h1>
+          <h1 class="text-xxl">Global merchant network for <br> real time settlements</h1>
           <p>APIs for in-store mobile payments worldwide</p>
-          <button>Know more</button>
+          <button class="cursor-pointer text-sm w-400 b-none uppercase">Know more</button>
           <br>
-          <img class="map" src="img/desknotes.png" alt="desknotes">
+          <img src="img/desknotes.png" alt="desknotes">
         </div>
       </section>
 
       <section class="middle">
+        <div class="card text-center">
+          <h2 class="uppercase">We believe in the future of<br>mobile only banking</h2>
+          <div class="d-grid">
+            <img src="img/desknotes.png" alt="desknotes">
+            <p class="text-justify">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam sed velit, reprehenderit aliquam eius laborum placeat nulla sapiente numquam inventore iusto sequi voluptatem hic ad, iste, tempora voluptates harum! Error dolor quae id quibusdam eos ipsam voluptate eligendi officiis magnam enim est, nam cumque sint dicta aut laudantium. Alias, officiis?
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section class="bottom">
+      <section class="bottom text-center">
+        <h2>How we work?</h2>
+
+        <div class="cards d-grid">
+          <div>
+            <div class="img-card">
+              <img src="img/headgit.png" alt="headgit">
+            </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem incidunt maxime quasi magni.
+            </p>
+          </div>
+
+          <div class="point">
+            <div class="pointers"><i class="fas fa-chevron-right text-center"></i></div>
+          </div>
+
+          <div>
+            <div class="img-card">
+              <img src="img/headgit.png" alt="headgit">
+            </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem incidunt maxime quasi magni.
+            </p>
+          </div>
+
+          <div class="point">
+            <div class="pointers"><i class="fas fa-chevron-right text-center"></i></div>
+          </div>
+
+          <div>
+            <div class="img-card">
+              <img src="img/headgit.png" alt="headgit">
+            </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem incidunt maxime quasi magni.
+            </p>
+          </div>
+        </div>
+
+        <button class="cursor-pointer uppercase">Learn more</button>
       </section>
     </main>
 
     <footer>
-      <div class="footer-contact">
+      <div class="footer-contact text-center d-flex">
         <h1>Ready to get started ?</h1>
-        <button>Contact us</button>
+        <button class="cursor-pointer uppercase b-none">Contact us</button>
       </div>
 
-      <div class="footer-links">
+      <div class="footer-links d-grid">
         <section class="site-branding">
           <h1 class="logo">pless</h1>
-          <p>
+          <p class="text-sm w-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus amet mollitia recusandae consectetur esse perspiciatis.
           </p>
-          <ul class="social-links">
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-            <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
-            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          <ul class="social-links list-style-none d-inline">
+            <li class="d-inline">
+              <a href="#" class="transition w-400 text-sm"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="d-inline">
+              <a href="#" class="transition w-400 text-sm"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="d-inline">
+              <a href="#" class="transition w-400 text-sm"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            <li class="d-inline">
+              <a href="#" class="transition w-400 text-sm"><i class="fab fa-tumblr"></i></a>
+            </li>
+            <li class="d-inline">
+              <a href="#" class="transition w-400 text-sm"><i class="fab fa-pinterest-p"></i></a>
+            </li>
+            <li class="d-inline">
+              <a href="#" class="transition w-400 text-sm"><i class="fab fa-linkedin-in"></i></a>
+            </li>
           </ul>
         </section>
 
-        <section class="site-links">
+        <section class="site-links d-grid">
           <div class="site-links1">
-            <h5>Learn more</h5>
-            <ul>
-              <li><a href="#">How it works?</a></li>
-              <li><a href="#">Meeting tools</a></li>
-              <li><a href="#">Live streaming</a></li>
-              <li><a href="#">Contact</a></li>
+            <h5 class="uppercase">Learn more</h5>
+            <ul class="list-style-none">
+              <li>
+                <a href="#" class="transition w-400 text-sm">How it works?</a>
+              </li>
+              <li>
+                <a href="#" class="transition w-400 text-sm">Meeting tools</a>
+              </li>
+              <li>
+                <a href="#" class="transition w-400 text-sm">Live streaming</a>
+              </li>
+              <li>
+                <a href="#" class="transition w-400 text-sm">Contact</a>
+              </li>
             </ul>
           </div>
 
           <div class="site-links2">
-            <h5>About us</h5>
-            <ul>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Privacy policy</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
+            <h5 class="uppercase">About us</h5>
+            <ul class="list-style-none">
+              <li>
+                <a href="#" class="transition w-400 text-sm">About us</a>
+              </li>
+              <li>
+                <a href="#" class="transition w-400 text-sm">Features</a>
+              </li>
+              <li>
+                <a href="#" class="transition w-400 text-sm">Privacy policy</a>
+              </li>
+              <li>
+                <a href="#" class="transition w-400 text-sm">Terms & Conditions</a>
+              </li>
             </ul>
           </div>
 
           <div class="site-links3">
-            <h5>Support</h5>
-            <ul>
-              <li><a href="#">F.A.Q.</a></li>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">Live chat</a></li>
-              <li><a href="#">Phone call</a></li>
+            <h5 class="uppercase">Support</h5>
+            <ul class="list-style-none">
+              <li>
+                <a href="#" class="transition w-400 text-sm">F.A.Q.</a>
+              </li>
+              <li>
+                <a href="#" class="transition w-400 text-sm">Contact us</a>
+              </li>
+              <li>
+                <a href="#" class="transition w-400 text-sm">Live chat</a>
+              </li>
+              <li>
+                <a href="#" class="transition w-400 text-sm">Phone call</a>
+              </li>
             </ul>
           </div>
         </section>
