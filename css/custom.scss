@@ -11,12 +11,6 @@ $redcolor: #e63f8c;
 $pinkcolor: #ec7eb1;
 $defaultcolor: #5b5b5b;
 
-// Mixins
-// @mixin special-text {
-//   @include important-text;
-//   @include link;
-//   @include special-border;
-// }
 @mixin logo {
   cursor: pointer;
   color: $maincolor;
