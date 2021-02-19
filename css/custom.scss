@@ -1,0 +1,204 @@
+// Variables
+$fonts1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$fonts2: Verdana, Geneva, Tahoma, sans-serif;
+$maincolor: #fff;
+$hovercolor: #acb6c5;
+$primarycolor: #5f52a4;
+$secondarycolor: #39325c;
+$thirtiarycolor: #3f3768;
+$darkviolet: #352f55;
+$redcolor: #e63f8c;
+$pinkcolor: #ec7eb1;
+$defaultcolor: #5b5b5b;
+
+// Mixins
+// @mixin special-text {
+//   @include important-text;
+//   @include link;
+//   @include special-border;
+// }
+@mixin logo {
+  cursor: pointer;
+  color: $maincolor;
+  font-family: $fonts2;
+  font-size: 25px;
+  font-weight: 500;
+  margin-right: auto;
+}
+
+.container {
+  background-color: $maincolor;
+  font-family: $fonts1;
+}
+
+li, a, button {
+  font-family: $fonts1;
+  font-weight: 500;
+  font-size: 16px;
+  color: $maincolor;
+  text-decoration: none;
+}
+
+button { box-shadow: none, $hovercolor, $hovercolor, none; }
+
+header {
+  background-color: $primarycolor;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 10%;
+
+  nav {
+    color: $maincolor;
+    padding: 10px;
+
+    .nav-links li {
+      padding: 0px 20px;
+
+      a:hover { color: $hovercolor; }
+    }
+  }
+}
+
+.logo { @include logo; }
+
+main {
+  background-color: $maincolor;
+  color: $defaultcolor;
+
+  .top {
+    background-color: $primarycolor;
+    color: $maincolor;
+    padding: 15px 10%;
+
+    div {
+      padding-top: 30px;
+
+      p { padding: 15px 0; }
+
+      button {
+        background-color: $pinkcolor;
+        border-radius: 1px;
+        padding: 8px 20px;
+        margin: 30px 0 10px 0;
+      }
+
+      img { width: 50%; }
+    }
+  }
+
+  .middle {
+    background-color: $maincolor;
+    padding: 10%;
+    color: $defaultcolor;
+
+    .card {
+      padding: 5%;
+      border: .5px solid $defaultcolor;
+      border-radius: 15px;
+
+      div {
+        grid-template-columns: 1.5fr 1fr;
+        grid-gap: 0 10px;
+        padding-top: 50px;
+
+        img { width: 350px; }
+      }
+    }
+  }
+
+  .bottom {
+    background-color: $secondarycolor;
+    color: $maincolor;
+    padding: 8% 10%;
+
+    .cards {
+      grid-template-columns: repeat(2, 1fr 15px) 1fr;
+      grid-gap: 20px 50px;
+      padding: 50px 0;
+
+      .point {
+        width: 100%;
+        padding-top: 75px;
+
+        .pointers {
+          background-color: $maincolor;
+          border-radius: 50px;
+          padding: 10px;
+          width: 40px;
+          height: 40px;
+          margin: 0 auto;
+  
+          i {
+            padding: 0;
+            margin: 0;
+            color: $defaultcolor;
+            padding-left: 3px;
+          }
+        }
+      }
+
+      .img-card {
+        background-color: $maincolor;
+        border-radius: 8px;
+        padding: 10px;
+
+        img { width: 200px; }
+      }
+
+      p { padding-top: 40px; }
+    }
+
+    button {
+      background-color: $secondarycolor;
+      border: 2px solid $maincolor;
+      border-radius: 1px;
+      padding: 8px 20px;
+    }
+  }
+}
+
+footer {
+  background-color: $darkviolet;
+  color: $maincolor;
+  padding: 10%;
+
+  li { padding-top: 10px; }
+
+  a:hover { color: $hovercolor; }
+
+  .footer-contact {
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+
+    button {
+      background-color: $maincolor;
+      color: $primarycolor;
+      border-radius: 1px;
+      padding: 8px 20px;
+    }
+  }
+
+  .footer-links {
+    padding-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 60px;
+
+    .site-branding {
+      h1.logo { margin-bottom: 15px; }
+
+      p { width: 250px; padding-bottom: 20px; }
+
+      .social-links {
+        padding: 10px 0;
+
+        li { padding: 10px; }
+      }
+    }
+
+    .site-links {
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+      grid-gap: 0 40px;
+    }
+  }
+}
