@@ -63,4 +63,46 @@ header nav .nav-links li a {
 header nav .nav-links li a:hover {
   color: #acb6c5;
 }
+
+main {
+  background-color: #fff;
+  color: #3a3a3a;
+}
+
+main .intro {
+  background-color: #5f52a4;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10%;
+}
+
+main .intro div {
+  padding: 30px 0 0 0;
+}
+
+main .intro div h1 {
+  font-size: xx-large;
+}
+
+main .intro div p {
+  padding: 15px 0;
+}
+
+main .intro div button {
+  font-size: small;
+  font-weight: 400;
+  background-color: #ee457d;
+  border: none;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  margin: 30px 0 10px 0;
+}
+
+main .intro div img {
+  width: 50%;
+}
+
+main .map1 {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */

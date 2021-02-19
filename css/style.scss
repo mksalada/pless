@@ -4,6 +4,7 @@ $fonts2: Verdana, Geneva, Tahoma, sans-serif;
 $maincolor: #fff;
 $hovercolor: #acb6c5;
 $primarycolor: #5f52a4;
+$defaultcolor: #3a3a3a;
 
 * {
   margin: 0;
@@ -16,7 +17,7 @@ $primarycolor: #5f52a4;
   font-family: $fonts1;
 }
 
-li, a, button   {
+li, a, button {
   font-family: $fonts1;
   font-weight: 500;
   font-size: 16px;
@@ -55,5 +56,39 @@ header {
         a:hover { color: $hovercolor; }
       }
     }
+  }
+}
+
+main {
+  background-color: $maincolor;
+  color: $defaultcolor;
+
+  .intro {
+    background-color: $primarycolor;
+    color: $maincolor;
+    text-align: center;
+    padding: 15px 10%;
+
+    div {
+      padding: 30px 0 0 0;
+      h1 { font-size: xx-large; }
+      p { padding: 15px 0; }
+
+      button {
+        font-size: small;
+        font-weight: 400;
+        background-color: #ee457d;
+        border: none;
+        text-transform: uppercase;
+        padding: 8px 20px;
+        margin: 30px 0 10px 0;
+      }
+
+      img { width: 50%; }
+    }
+  }
+
+  .map1 {
+    text-align: center;
   }
 }
