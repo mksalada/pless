@@ -7,12 +7,38 @@
 
 .container {
   background-color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li, a, button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
 }
 
 header {
   background-color: #5f52a4;
-  padding: 5px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 10%;
+}
+
+header .logo {
+  cursor: pointer;
+  margin-right: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #fff;
 }
 
 header nav {
@@ -20,30 +46,21 @@ header nav {
   padding: 10px;
 }
 
-header nav .nav-link {
+header nav .nav-links {
   list-style-type: none;
-  display: inline;
-  margin: 5px;
 }
 
-header nav .link {
-  color: #fff;
-  text-decoration: none;
+header nav .nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-header nav .link:hover {
-  color: #c7c7c7;
-  text-decoration: underline;
+header nav .nav-links li a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-header nav .site-logo {
-  color: #fff;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-header nav .site-logo:hover {
-  color: #fff;
-  text-decoration: none;
+header nav .nav-links li a:hover {
+  color: #acb6c5;
 }
 /*# sourceMappingURL=style.css.map */

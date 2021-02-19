@@ -1,3 +1,10 @@
+// Variables
+$fonts1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$fonts2: Verdana, Geneva, Tahoma, sans-serif;
+$maincolor: #fff;
+$hovercolor: #acb6c5;
+$primarycolor: #5f52a4;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,41 +12,48 @@
 }
 
 .container {
-  background-color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $maincolor;
+  font-family: $fonts1;
+}
+
+li, a, button   {
+  font-family: $fonts1;
+  font-weight: 500;
+  font-size: 16px;
+  color: $maincolor;
+  text-decoration: none;
 }
 
 header {
-  background-color: #5f52a4;
-  padding: 5px 20px;
+  background-color: $primarycolor;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 10%;
+
+  .logo   {
+    cursor: pointer;
+    margin-right: auto;
+    font-family: $fonts2;
+    font-weight: 500;
+    font-size: 25px;
+    color: $maincolor;
+  }
 
   nav {
-    color: #fff;
+    color: $maincolor;
     padding: 10px;
 
-    .nav-link {
+    .nav-links {
       list-style-type: none;
-      display: inline;
-      margin: 5px;
-    }
 
-    .link {
-      color: #fff;
-      text-decoration: none;
-    }
-    .link:hover {
-      color: #c7c7c7;
-      text-decoration: underline;
-    }
+      li {
+        display: inline-block;
+        padding: 0px 20px;
 
-    .site-logo {
-      color: #fff;
-      text-decoration: none;
-      font-size: 20px;
-    }
-    .site-logo:hover {
-      color: #fff;
-      text-decoration: none;
+        a { transition: all 0.3s ease 0s; }
+        a:hover { color: $hovercolor; }
+      }
     }
   }
 }
