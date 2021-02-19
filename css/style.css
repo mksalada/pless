@@ -5,199 +5,67 @@
           box-sizing: border-box;
 }
 
-.container {
-  background-color: #fff;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.text-center {
+  text-align: center;
 }
 
-li, a, button {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #fff;
+.text-justify {
+  text-align: justify;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.deco-none {
   text-decoration: none;
 }
 
-button {
-  -webkit-box-shadow: none, #acb6c5, #acb6c5, none;
-          box-shadow: none, #acb6c5, #acb6c5, none;
+.text-sm {
+  font-size: small;
 }
 
-header {
-  background-color: #5f52a4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 15px 10%;
-}
-
-header .logo {
-  cursor: pointer;
-  margin-right: auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 500;
-  font-size: 25px;
-  color: #fff;
-}
-
-header nav {
-  color: #fff;
-  padding: 10px;
-}
-
-header nav .nav-links {
-  list-style-type: none;
-}
-
-header nav .nav-links li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-header nav .nav-links li a {
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-header nav .nav-links li a:hover {
-  color: #acb6c5;
-}
-
-main {
-  background-color: #fff;
-  color: #3a3a3a;
-}
-
-main .top {
-  background-color: #5f52a4;
-  color: #fff;
-  text-align: center;
-  padding: 15px 10%;
-}
-
-main .top div {
-  padding-top: 30px;
-}
-
-main .top div h1 {
+.text-xxl {
   font-size: xx-large;
 }
 
-main .top div p {
-  padding: 15px 0;
-}
-
-main .top div button {
+.cursor-pointer {
   cursor: pointer;
-  font-size: small;
-  font-weight: 400;
-  background-color: #ee457d;
-  border: none;
-  border-radius: 1px;
-  text-transform: uppercase;
-  padding: 8px 20px;
-  margin: 30px 0 10px 0;
 }
 
-main .top div img {
-  width: 50%;
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-main .middle {
-  background-color: #fff;
+.d-grid {
+  display: -ms-grid;
+  display: grid;
 }
 
-footer {
-  background-color: #39325c;
-  color: #fff;
-  padding: 60px 10%;
+.d-inline {
+  display: inline;
 }
 
-footer h5, footer button {
-  text-transform: uppercase;
+.d-block {
+  display: block;
 }
 
-footer li {
-  list-style-type: none;
-  padding-top: 10px;
+.d-inline-block {
+  display: inline-block;
 }
 
-footer a, footer p {
-  font-weight: 400;
-  font-size: small;
-}
-
-footer a {
+.transition {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
-footer a:hover {
-  color: #acb6c5;
+.list-style-none {
+  list-style-type: none;
 }
 
-footer .footer-contact {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-bottom: 60px;
-}
-
-footer .footer-contact button {
-  cursor: pointer;
-  background-color: #fff;
-  color: #5f52a4;
+.b-none {
   border: none;
-  border-radius: 1px;
-  padding: 8px 20px;
-}
-
-footer .footer-links {
-  padding-top: 40px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0 60px;
-}
-
-footer .footer-links .site-branding h1 {
-  cursor: pointer;
-  margin-right: auto;
-  margin-bottom: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 500;
-  font-size: 25px;
-}
-
-footer .footer-links .site-branding p {
-  width: 250px;
-}
-
-footer .footer-links .site-branding .social-links {
-  padding: 10px 0;
-}
-
-footer .footer-links .site-branding .social-links li {
-  display: inline;
-  padding-right: 10px;
-}
-
-footer .footer-links .site-links {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(60px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-  grid-gap: 0 40px;
 }
 /*# sourceMappingURL=style.css.map */
