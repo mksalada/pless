@@ -20,10 +20,7 @@ $defaultcolor: #5b5b5b;
   margin-right: auto;
 }
 
-.container {
-  background-color: $maincolor;
-  font-family: $fonts1;
-}
+.container { background-color: $maincolor; font-family: $fonts1; }
 
 li, a, button {
   font-family: $fonts1;
@@ -122,7 +119,7 @@ main {
           width: 40px;
           height: 40px;
           margin: 0 auto;
-  
+
           i {
             padding: 0;
             margin: 0;
